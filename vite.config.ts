@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
   // اسم المستودع الخاص بك على GitHub
   // على سبيل المثال إذا كان عنوان المستودع هو https://github.com/username/edu-platform
   // فإن اسم المستودع هو "edu-platform"
-  const repository = ""; // قم بتعديل هذا بإضافة اسم المستودع الخاص بك
+  const repository = "coursebridge-connect"; // تم تحديث اسم المستودع
 
   return {
     server: {
@@ -29,4 +29,3 @@ export default defineConfig(({ mode }) => {
     base: mode === 'production' && repository ? `/${repository}/` : '/',
   };
 });
-
