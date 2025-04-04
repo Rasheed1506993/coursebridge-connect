@@ -23,6 +23,8 @@
 
     <!-- أضفنا النص البرمجي الخاص بإعادة التوجيه من GitHub Pages -->
     <script type="text/javascript">
+     // أضف هذا قبل السكريبت الحالي
+     sessionStorage.redirect = location.href;
       // GitHub Pages يعيد التوجيه لصفحات بدون مسار صحيح
       (function() {
         // ترميز المسارات الأساسية
@@ -39,6 +41,6 @@
     <div id="root"></div>
     <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
     <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/coursebridge-connect/src/main.tsx"></script>
   </body>
 </html>
