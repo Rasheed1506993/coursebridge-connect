@@ -6,18 +6,22 @@
   <title>منصة التعليم الإلكتروني</title>
   <script type="text/javascript">
     // عند الوصول لصفحة 404، سيتم إعادة التوجيه إلى الصفحة الرئيسية
-    var pathSegmentsToKeep = 1;
+    var segmentCount = 1;
     var l = window.location;
+    var repo = "/coursebridge-connect"; // اسم المستودع
+    
     l.replace(
       l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-      l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-      l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
-      (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-      l.hash
+      repo + '/?p=' + l.pathname.slice(1).split('/').slice(segmentCount).join('/') +
+      (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+      (l.hash)
     );
+    
+    // نخزن المسار الأصلي الكامل للاستخدام لاحقًا
+    sessionStorage.redirect = l.pathname + l.search + l.hash;
   </script>
 </head>
 <body>
+  <p>جارٍ إعادة التوجيه إلى الصفحة الرئيسية...</p>
 </body>
 </html>
-
