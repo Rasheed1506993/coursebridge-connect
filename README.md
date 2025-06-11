@@ -1,69 +1,150 @@
-# Welcome to your Lovable project
 
-## Project info
+# منصة كورس بريدج - CoursBridge Connect 🎓
 
-**URL**: https://lovable.dev/projects/bf611be6-fddd-4a32-b52c-99d52f6cf8fe
+منصة تعليمية إلكترونية متطورة مصممة لربط الطلاب والمعلمين في بيئة تعليمية تفاعلية وحديثة.
 
-## How can I edit this code?
+## ✨ المميزات الرئيسية
 
-There are several ways of editing your application.
+- 🎯 **دورات متنوعة**: مجموعة واسعة من الدورات التعليمية في مختلف المجالات
+- 👨‍🏫 **مدربين مؤهلين**: فريق من أفضل المدربين والخبراء
+- 💬 **منتديات تفاعلية**: مساحة للنقاش والتفاعل بين الطلاب
+- 📱 **تصميم متجاوب**: يعمل بسلاسة على جميع الأجهزة
+- 🌐 **واجهة عربية**: دعم كامل للغة العربية والاتجاه من اليمين إلى اليسار
 
-**Use Lovable**
+## 🚀 التقنيات المستخدمة
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/bf611be6-fddd-4a32-b52c-99d52f6cf8fe) and start prompting.
+- **React 18** - مكتبة JavaScript لبناء واجهات المستخدم
+- **TypeScript** - نظام أنواع البيانات المتقدم
+- **Vite** - أداة بناء سريعة وحديثة
+- **Tailwind CSS** - إطار عمل CSS للتصميم السريع
+- **Shadcn/UI** - مكونات واجهة المستخدم الحديثة
+- **React Router** - للتنقل بين الصفحات
+- **TanStack Query** - إدارة حالة البيانات
+- **Lucide React** - مكتبة الأيقونات
 
-Changes made via Lovable will be committed automatically to this repo.
+## 📋 متطلبات النظام
 
-**Use your preferred IDE**
+- Node.js (الإصدار 18 أو أحدث)
+- npm أو yarn أو bun
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🛠️ التثبيت والإعداد
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### 1. استنساخ المشروع
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+git clone https://github.com/Rasheed1506993/coursebridge-connect.git
+cd coursebridge-connect
 ```
 
-**Edit a file directly in GitHub**
+### 2. تثبيت التبعيات
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+npm install
+# أو
+yarn install
+# أو
+bun install
+```
 
-**Use GitHub Codespaces**
+### 3. تشغيل الخادم المحلي
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run dev
+# أو
+yarn dev
+# أو
+bun dev
+```
 
-## What technologies are used for this project?
+الآن يمكنك زيارة `http://localhost:8080` لرؤية المشروع يعمل محلياً.
 
-This project is built with .
+## 🏗️ البناء للإنتاج
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+```bash
+npm run build
+# أو
+yarn build
+# أو
+bun run build
+```
 
-## How can I deploy this project?
+سيتم إنشاء مجلد `dist` يحتوي على ملفات الإنتاج المُحسَّنة.
 
-Simply open [Lovable](https://lovable.dev/projects/bf611be6-fddd-4a32-b52c-99d52f6cf8fe) and click on Share -> Publish.
+## 📁 هيكل المشروع
 
-## I want to use a custom domain - is that possible?
+```
+coursebridge-connect/
+├── public/              # الملفات الثابتة
+├── src/
+│   ├── components/      # مكونات React القابلة لإعادة الاستخدام
+│   │   └── ui/         # مكونات واجهة المستخدم الأساسية
+│   ├── pages/          # صفحات التطبيق
+│   ├── hooks/          # React Hooks مخصصة
+│   ├── lib/            # وظائف مساعدة ومرافق
+│   └── main.tsx        # نقطة دخول التطبيق
+├── package.json
+└── README.md
+```
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+## 📄 الصفحات المتاحة
+
+- **الصفحة الرئيسية** (`/`) - مقدمة عن المنصة والمميزات
+- **الدورات** (`/courses`) - قائمة بجميع الدورات المتاحة
+- **تفاصيل الدورة** (`/course/:id`) - معلومات مفصلة عن دورة معينة
+- **المنتديات** (`/forums`) - منتديات النقاش والتفاعل
+- **تسجيل الدخول** (`/login`) - صفحة تسجيل الدخول
+
+## 🌐 النشر
+
+تم نشر المشروع على GitHub Pages ويمكن الوصول إليه عبر:
+[https://rasheed1506993.github.io/coursebridge-connect/](https://rasheed1506993.github.io/coursebridge-connect/)
+
+### نشر محلي
+
+يمكنك نشر المشروع على أي منصة استضافة ويب حديثة مثل:
+- Vercel
+- Netlify
+- GitHub Pages
+- Firebase Hosting
+
+## 🎨 التخصيص
+
+### الألوان والتصميم
+
+يمكنك تخصيص ألوان المشروع من خلال تعديل ملف `src/index.css` و `tailwind.config.ts`.
+
+### الخطوط
+
+يستخدم المشروع خط "Tajawal" من Google Fonts المناسب للنصوص العربية.
+
+## 🤝 المساهمة
+
+نرحب بمساهماتكم! يرجى اتباع الخطوات التالية:
+
+1. اعمل Fork للمشروع
+2. أنشئ فرع جديد للميزة (`git checkout -b feature/amazing-feature`)
+3. اعمل Commit للتغييرات (`git commit -m 'Add some amazing feature'`)
+4. ادفع للفرع (`git push origin feature/amazing-feature`)
+5. افتح Pull Request
+
+## 📝 الترخيص
+
+هذا المشروع مفتوح المصدر ومتاح تحت رخصة MIT.
+
+## 📞 التواصل
+
+- **المطور**: Rasheed
+- **GitHub**: [Rasheed1506993](https://github.com/Rasheed1506993)
+- **المشروع**: [coursebridge-connect](https://github.com/Rasheed1506993/coursebridge-connect)
+
+## 🙏 شكر وتقدير
+
+شكر خاص لـ:
+- فريق React على هذه المكتبة الرائعة
+- مطوري Tailwind CSS
+- مجتمع shadcn/ui
+- مجتمع المطورين العرب
+
+---
+
+⭐ إذا أعجبك هذا المشروع، لا تنس إعطاؤه نجمة على GitHub!
